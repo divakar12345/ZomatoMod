@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:id="@+id/food_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/baseline_keyboard_backspace_black_24" />
+
+            <EditText
+                android:id="@+id/food_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back_button"
+                android:layout_margin="10dp"
+                android:hint="@string/foodsuggestion"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/food_search">
+
+            <TextView
+                android:id="@+id/top_restaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/top_res" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/food_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_restaurants"
+                android:padding="8dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

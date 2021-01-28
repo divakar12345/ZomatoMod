@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="restaurant"
+            type="com.example.zomatomod.model.UserReviewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/memberAdminCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/star_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/baseline_stars_black_24" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/star1"
+                        android:src="@drawable/baseline_stars_black_24" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/star2"
+                        android:src="@drawable/baseline_stars_black_24" />
+
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/star3"
+                        android:src="@drawable/baseline_stars_black_24" />
+
+                    <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/star4"
+                        android:src="@drawable/baseline_stars_black_24" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/star_layout"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/review_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/star_layout"
+                    android:layout_marginStart="15dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

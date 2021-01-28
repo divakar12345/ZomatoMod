@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Zomato Mod</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_file">com.example.preference_file</string>
+    <string name="foodsuggestion">Search for food, restaurants..</string>
+    <string name="top_res">Top Restaurants</string>
+    <string name="search_city">Search for your location..</string>
+    <string name="menu">Menu</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_menu">No Menu Available</string>
+</resources>
